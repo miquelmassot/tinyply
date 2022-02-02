@@ -1,12 +1,10 @@
 cmake_minimum_required(VERSION 3.16)
+project(tinyply VERSION "2.3.2" LANGUAGES CXX)
 
 # Compiler requirements
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-
-project(tinyply VERSION "2.3.2" LANGUAGES CXX)
-set(PROJECT_VERSION 2.3)
 
 include_directories("${CMAKE_CURRENT_SOURCE_DIR}/source")
 include_directories("${CMAKE_CURRENT_SOURCE_DIR}/third-party")

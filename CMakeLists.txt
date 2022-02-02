@@ -1,15 +1,15 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.16)
 
 # Compiler requirements
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-project(tinyply LANGUAGES CXX)
+project(tinyply VERSION "2.3.2" LANGUAGES CXX)
 set(PROJECT_VERSION 2.3)
 
-include_directories("${CMAKE_SOURCE_DIR}/source")
-include_directories("${CMAKE_SOURCE_DIR}/third-party")
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}/source")
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}/third-party")
 
 set(CMAKE_DEBUG_POSTFIX "d")
 
